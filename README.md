@@ -1,4 +1,4 @@
-Based on Trammell Hudson's demos, with the addition of support for programming SRAM, by tunning:
+Based on Trammell Hudson's demos, with the addition of support for programming SRAM, by running:
 
   sudo make [file].sram
 
