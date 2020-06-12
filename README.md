@@ -1,3 +1,15 @@
+Based on Trammell Hudson's demos, with the addition of support for programming SRAM, by tunning:
+
+  sudo make [file].sram
+
+instead of:
+
+  sudo make [file].flash
+
+R3 and R4 both need to be removed and rotated 90°, using the same four pads, to allow SRAM programming.  It is possible to fit a 2x2 2 mm square-pin SMT header on the pads, and rotate two shunts, between the two positions, to select SRAM or flash programming.
+
+====
+
 ![Upduino v2 RGB LEd](images/led.jpg)
 
 Upduino v2 examples with icestorm
