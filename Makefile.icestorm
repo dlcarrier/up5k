@@ -30,6 +30,10 @@ PNR ?= $(ICEPATH)nextpnr-ice40
 	$(ICEPATH)iceprog $<
 	echo $(USB_DEV) | tee /sys/bus/usb/drivers/ftdi_sio/bind
 
+%.sram: %.bin
+	$(ICEPATH)iceprog -S $<
+	echo $(USB_DEV) | tee /sys/bus/usb/drivers/ftdi_sio/bind
+
 %.bin: %.asc
 	$(ICEPATH)icepack $< $@
 
